@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="359dp"
             android:layout_height="wrap_content"
-            android:hint="Inscription"
+            android:hint=""
             android:textSize="32sp"
             android:gravity="center"
             android:textStyle="bold"/>
@@ -28,17 +28,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/buttonSignup"
-            android:layout_marginTop="117dp"
+            android:layout_marginTop="17dp"
+
             android:baselineAligned="false"
             android:text="Retour" />
 
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="364dp"
+            android:layout_height="36dp"
+            android:text="Nom"
+            android:textSize="18sp" />
+
         <EditText
             android:id="@+id/editTextName"
-            android:layout_width="379dp"
+            android:layout_width="367dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/textViewName"
             android:layout_marginTop="8dp"
             android:hint="Entrez votre nom" />
+
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:layout_marginTop="16dp"
+            android:text="Prénom"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/editTextLastName"
@@ -48,6 +65,15 @@
             android:layout_marginTop="8dp"
             android:hint="Entrez votre prénom" />
 
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextLastName"
+            android:layout_marginTop="16dp"
+            android:text="Adresse"
+            android:textSize="18sp" />
+
         <EditText
             android:id="@+id/editTextAddress"
             android:layout_width="match_parent"
@@ -55,6 +81,15 @@
             android:layout_below="@id/textViewAddress"
             android:layout_marginTop="8dp"
             android:hint="Entrez votre adresse" />
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAddress"
+            android:layout_marginTop="16dp"
+            android:text="Téléphone"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/editTextPhone"
@@ -64,6 +99,15 @@
             android:layout_marginTop="8dp"
             android:hint="Entrez votre numéro de téléphone"
             android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/editTextPhone"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/editTextEmail"
